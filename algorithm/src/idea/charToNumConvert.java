@@ -26,6 +26,6 @@ public class charToNumConvert {
 	
 			result = result + (ch[i] - 48) * (long)Math.pow(10, i);
 		}
-		System.out.println(result);
+		System.out.println(result); 
 	}
 }
