@@ -11,9 +11,12 @@ package idea;
  */
 public class EncryptionDecryption {
 	
+	final static int ED_WROD = 1234;
+	
 	public static void main(String[] args) {
 		
 		String target = "암호라구요";
+		System.out.println("암호화 대상 : " + target);
 		
 		String encVar = EncryptionDecryption.encryption(target);
 		String decVar = EncryptionDecryption.decryption(encVar);
@@ -45,7 +48,7 @@ public class EncryptionDecryption {
 		String result = "encryption";	//암호화된 문자열 앞에 encryption를 붙여주기 위한 사전작업
 		for(int i = 0 ; i < targetAr.length ; i++) {
 			//targetAr[]각 index마다 int로 캐스팅 후 XOR연산 하여 
-			result = result + (char)((int)targetAr[i] ^ 1234); // result = result + XOR결과
+			result = result + (char)((int)targetAr[i] ^ ED_WROD); // result = result + XOR결과
 			// 이렇게 실행하면 문자열의 문자 하나하나를 암호화 해서 다시 result에 + 시킨다.
 		}
 		
@@ -68,7 +71,7 @@ public class EncryptionDecryption {
 		
 		for(int i = 0 ; i < targetAr.length ; i++) {
 			//targetAr[]각 index마다 int로 캐스팅 후 XOR연산 하여 
-			result = result + (char)((int)targetAr[i] ^ 1234); // result = result + XOR결과
+			result = result + (char)((int)targetAr[i] ^ ED_WROD); // result = result + XOR결과
 			// 이렇게 실행하면 문자열의 문자 하나하나를 복호화 해서 다시 result에 + 시킨다
 		}
 		return result;
