@@ -21,6 +21,6 @@ public class Source04_QId15552 {
 			sb.append(Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken())).append("\n");
 		}
 		br.close();
-		
+		System.out.println(sb);
 	}
 }
