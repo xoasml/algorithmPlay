@@ -1,4 +1,4 @@
-package baekJoon.ControllStatmentFor;
+package baekJoon.no3For;
 
 import java.io.BufferedReader;
 import java.io.IOException;

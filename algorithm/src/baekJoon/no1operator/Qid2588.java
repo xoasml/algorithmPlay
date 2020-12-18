@@ -1,4 +1,4 @@
-package baekJoon;
+package baekJoon.no1operator;
 
 import java.util.Scanner;
 

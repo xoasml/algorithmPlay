@@ -1,4 +1,4 @@
-package baekJoon;
+package baekJoon.no2If;
 
 import java.util.Scanner;
 
