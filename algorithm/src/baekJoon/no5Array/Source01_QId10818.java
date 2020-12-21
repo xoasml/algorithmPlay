@@ -1,4 +1,4 @@
-package baekJoon.No5Array;
+package baekJoon.no5Array;
 
 import java.io.BufferedReader;
 import java.io.IOException;
