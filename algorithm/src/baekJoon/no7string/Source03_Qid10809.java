@@ -17,11 +17,11 @@ public class Source03_Qid10809 {
 		for(int i = 0 ; i<alphabet.length() ; i++) {
 			String tmp = "-1";
 			
-			tmp = alphabet.indexOf(i)+"";
+			tmp = alphabet.indexOf(input[i])+"";
 			
 			sj.add(tmp);
 		}
 		System.out.println(sj.length());
-		System.out.println(sj);
+		System.out.println(sj);zzzz
 	}
 }
