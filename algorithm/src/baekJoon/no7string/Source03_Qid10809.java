@@ -8,20 +8,13 @@ import java.util.StringJoiner;
 public class Source03_Qid10809 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		String alphabet = "abcdefghijklmnopqrstuvwxyz";
-		char[] input = br.readLine().toCharArray();
-		
+		char[] alphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
+		String input = br.readLine();
 		StringJoiner sj = new StringJoiner(" ");
 		
-		
-		for(int i = 0 ; i<alphabet.length() ; i++) {
-			String tmp = "-1";
-			
-			tmp = alphabet.indexOf(input[i])+"";
-			
-			sj.add(tmp);
+		for(int i = 0 ; i<alphabet.length ; i++) {
+			sj.add(input.indexOf(alphabet[i])+"");
 		}
-		System.out.println(sj.length());
-		System.out.println(sj);zzzz
+		System.out.println(sj);
 	}
 }
